@@ -13,7 +13,8 @@ Feel free to explore the discussion section of this repo to share ideas.
 
 [Latest Reddit post here.](https://www.reddit.com/r/raspberry_pi/comments/mkbxss/cm4_custom_nas_complete/)
 
-![](https://user-images.githubusercontent.com/2614134/108195493-d519ed80-70e5-11eb-8293-3591e432dd8e.jpg)
+![image](https://github.com/IsiLuigi2014/CM4-NAS/assets/43269977/f9d0918e-91b2-41ab-bda5-29f0f8e1ddcd)
+
 
 ##### Table of Contents
 - [Software](#software)
@@ -79,9 +80,9 @@ The trick is to put as little solder paste as possible and the chips will natura
 The rest of the parts should be fairly easy to solder with a standard iron.
 
 # Pinout
-Not up to date anymore.
+**Not up to date anymore.**
 
-![](https://user-images.githubusercontent.com/2614134/115098729-9cd53680-9eff-11eb-8c69-481f20cef7db.png)
+![](https://user-images.githubusercontent.com/2614134/115098729-9cd53680-9eff-11eb-8c69-481f20cef7db.png)  
 
 
 # Revision History
