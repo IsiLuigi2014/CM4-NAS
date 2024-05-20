@@ -90,3 +90,4 @@ The rest of the parts should be fairly easy to solder with a standard iron.
 - **1.2**: Changed the USB select headers for a simpler solution with a single jumper
 - **1.3**: Replaced the HDMI header by a full size HDMI female connector, exposed 9 GPIOs, inverted polarity back for PCIe Tx/Rx signals and added a power LED.
 - **1.4**: Add pin to OLED connector for button, use SMD caps and LEDs, more info on silkscreen and fixed some traces.
+- **1.5**: Added support for 12v power only
