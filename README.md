@@ -48,8 +48,6 @@ The interfaces the board forwards from the CM4 are the following:
 Other than relaying the compute module's IOs, the board adds other connections, mainly for power.
 - **Fan control**: The board expects a dedicated PWM fan controller IC (see part list). Its output is routed to this JST connector (or your typical PWM fan connector) marked "Fan_PWM" on the board.
 - **USB selection headers**: To avoid needing a USB MUX on board, this header should be used with a jumper to select if you want to use the USB bus as master or as slave.
-- **Power input**: The board expects a 5V input for the CM4, and a 12V input for the PCIe card, both through the same JST connector labeled "PWR_IN".
-- **3V3 buck**: The PCIe card also requires a dedicated 3V3 supply. This can be provided through the "3V3_BUCK" header near the power input. The pinout was made to accommodate [this daughter board](https://www.aliexpress.com/item/32817933017.html?spm=a2g0s.9042311.0.0.27424c4dr779wi) from AliExpress, but you can use whatever you want for as long as you follow the pinout bellow.
 - **HDDs power**: Labeled "SATA_PWR". This is the power rail for the hard drives.
 
 # PCB Assembly
@@ -59,7 +57,7 @@ There is a *Fab* folder at the repo's root. This folder contains all the files t
 ## Required Parts
 Other than the standard caps and resistors, here are the components you will need if you want to assemble the board:
 - **High density connectors** ([digikey](https://www.digikey.ca/en/products/detail/hirose-electric-co-ltd/DF40C-100DS-0.4V%2851%29/1969495), [LCSC](https://lcsc.com/product-detail/Mezzanine-Connectors-Board-to-Board_HRS-Hirose-DF40C-100DS-0-4V-51_C597931.html)): You will need these to connect the CM4 to the board. They can be very daunting, but I found [this video](https://www.youtube.com/watch?v=eukcrFc18P4) of someone neatly soldering them with a hot air gun. When I finaly got to try it, I was surprise at how doable it was.
-- **MagJack** ([digikey](https://www.digikey.ca/en/products/detail/bel-fuse-inc/0826-1G1T-43-F/2107992)): I made the footprint for this specific one. It's expensive and I should have looked on LCSC before ordering.
+- **Ethernet** ([digikey](https://www.digikey.de/de/products/detail/abracon-llc/ARJM11C7-502-AB-ER2-T/7675199)): Switch from the expensive one to a cheaper model.
 - **Fan controller** ([digikey](https://www.digikey.ca/en/products/detail/microchip-technology/EMC2301-1-ACZL-TR/4696431), [LCSC](https://lcsc.com/product-detail/_MICROCHIP_EMC2301-1-ACZL-TR_EMC2301-1-ACZL-TR_C148036.html)): This chip is the exact same one that is on the official IO board and it's controlled by the CM4 through I²C.
 - **ESD sinks** ([digikey](https://www.digikey.ca/en/products/detail/texas-instruments/TPD4EUSB30DQAR/2503671), [LCSC](https://lcsc.com/product-detail/Diodes-ESD_Texas-Instruments-TPD4EUSB30DQAR_C90627.html)): They are optional in my (very uninformed) opinion. I think they were included on the IO board for POE applications mostly.
 - **Signal buffer** ([digikey](https://www.digikey.ca/en/products/detail/diodes-incorporated/74LVC1G07SE-7/2356550), [LCSC](https://lcsc.com/product-detail/Logic-Buffers-Drivers-Receivers-Transceivers_Diodes-Incorporated-74LVC1G07SE-7_C67531.html)): Used for the power LED and to buffer RUN_PG signal to be able to wake the CM4 from a sleep state.
@@ -81,6 +79,8 @@ The trick is to put as little solder paste as possible and the chips will natura
 The rest of the parts should be fairly easy to solder with a standard iron.
 
 # Pinout
+Not up to date anymore.
+
 ![](https://user-images.githubusercontent.com/2614134/115098729-9cd53680-9eff-11eb-8c69-481f20cef7db.png)
 
 
