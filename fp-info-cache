@@ -1,11 +1,18 @@
-9624268641494
+13722438611025
 CM4
-MagJack_0826-1G1T-43-F
+ABRACON_ARJM11C7-502-AB-ER2-T
 
 
 0
-18
-18
+16
+16
+CM4
+BarrelJack_Horizontal
+DC Barrel Jack
+Power Jack
+0
+3
+3
 CM4
 PCIex1-36
 
@@ -14,19 +21,26 @@ PCIex1-36
 38
 37
 CM4
-PinSocket_2x10_P2.54mm_Vertical_alternate-pinout
-Through hole straight socket strip, 2x10, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
-Through hole socket strip THT 2x10 2.54mm double row
-0
-20
-20
-CM4
 Raspberry-Pi-4-Compute-Module
 Raspberry Pi 4 Compute Module
 Raspberry Pi 4 Compute Module
 0
 200
 200
+CM4
+SDCARD_MOLEX_503398-1892
+
+
+0
+14
+11
+CM4
+SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias
+SOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lm5017.pdf#page=31), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+23
+9
 CM4
 TRJG0926HENL_MagJack
 https://p.globalsources.com/IMAGES/PDT/SPEC/690/K1160305690.pdf
